@@ -39,16 +39,36 @@
         "show_text_below": false
       }
     },
-    "new_featured_product_4JAiNt": {
+    "new_featured_product_9GW737": {
       "type": "new-featured-product",
       "settings": {
-        "heading": "New title",
-        "description": "<p>This is product description. <\/p>"
+        "selected_product_id": "the-3p-fulfilled-snowboard",
+        "button_text": "Buy Now{{ section.settings.selected_product_id.vendor }}",
+        "button_link": "shopify:\/\/products\/the-3p-fulfilled-snowboard",
+        "feature_1": "this",
+        "feature_2": "Add product feature",
+        "feature_3": "Add product feature",
+        "feature_4": "Add product feature",
+        "feature_5": "Add product feature"
+      }
+    },
+    "new_featured_product_VUjq4W": {
+      "type": "new-featured-product",
+      "settings": {
+        "selected_product_id": "",
+        "button_text": "Buy Now",
+        "button_link": "",
+        "feature_1": "Add product feature",
+        "feature_2": "Add product feature",
+        "feature_3": "Add product feature",
+        "feature_4": "Add product feature",
+        "feature_5": "Add product feature"
       }
     }
   },
   "order": [
     "image_banner",
-    "new_featured_product_4JAiNt"
+    "new_featured_product_9GW737",
+    "new_featured_product_VUjq4W"
   ]
 }

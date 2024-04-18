@@ -1,0 +1,41 @@
+/* Target the section */
+* {
+  color: red;
+}
+
+section h2 {
+  color: red;
+}
+section {
+  margin-bottom: 20px;
+}
+
+/* Style the heading */
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style the product image */
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Style the product title */
+section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style the feature points list */
+section .feature-points {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Style individual feature points */
+section .feature-points li {
+  margin-bottom: 5px;
+}
