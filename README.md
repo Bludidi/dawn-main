@@ -24,3 +24,14 @@ Your computer must have these programs installed:
   shopify theme dev --store product-feature-section
   ```
   - For local preview the store will be served at ```http://127.0.0.1:9292```
+
+## Using the Theme as Admin 
+***Please note the password for my store is:***  ```gupaix```
+- When you signed in as Admin you should navigate to ```Themes``` and on the ```Copy of Dawn``` theme click on ```customize``` button.
+- Under ```Template``` click on ```Add section``` and on a pop-up modal select a section named ```Feature Section```
+- When the ```Feature Section``` is clicked a side panel will show where you will be able to:
+  - Select a product
+  - Write custom text about the product (5 bullet point inputs)
+  - Customise a link for CTA Button
+  - Customise a text to show in the button
+  - You will have to save your changes.  
