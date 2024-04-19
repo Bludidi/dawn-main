@@ -39,36 +39,94 @@
         "show_text_below": false
       }
     },
-    "new_featured_product_9GW737": {
-      "type": "new-featured-product",
+    "feature_section_Q69PRk": {
+      "type": "feature-section",
       "settings": {
-        "selected_product_id": "the-3p-fulfilled-snowboard",
-        "button_text": "Buy Now{{ section.settings.selected_product_id.vendor }}",
-        "button_link": "shopify:\/\/products\/the-3p-fulfilled-snowboard",
-        "feature_1": "this",
-        "feature_2": "Add product feature",
-        "feature_3": "Add product feature",
-        "feature_4": "Add product feature",
-        "feature_5": "Add product feature"
+        "selected_product_id": "gift-card",
+        "feature_bullet_point_1": "Last long",
+        "feature_bullet_point_2": "Affordable",
+        "feature_bullet_point_3": "usable",
+        "feature_bullet_point_4": "good product",
+        "feature_bullet_point_5": "exclusive",
+        "cta_button_link": "\/",
+        "cta_button_text": "Shop Now"
       }
     },
-    "new_featured_product_VUjq4W": {
-      "type": "new-featured-product",
+    "featured_product_U34bzr": {
+      "type": "featured-product",
+      "blocks": {
+        "text_UjrThQ": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_rmg7c8": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_M4Xbph": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_fWfH9W": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_w4yFzd": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_pKm6xb": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_Cjymbt": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_UjrThQ",
+        "title_rmg7c8",
+        "price_M4Xbph",
+        "variant_picker_fWfH9W",
+        "quantity_selector_w4yFzd",
+        "buy_buttons_pKm6xb",
+        "share_Cjymbt"
+      ],
       "settings": {
-        "selected_product_id": "",
-        "button_text": "Buy Now",
-        "button_link": "",
-        "feature_1": "Add product feature",
-        "feature_2": "Add product feature",
-        "feature_3": "Add product feature",
-        "feature_4": "Add product feature",
-        "feature_5": "Add product feature"
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner",
-    "new_featured_product_9GW737",
-    "new_featured_product_VUjq4W"
+    "feature_section_Q69PRk",
+    "featured_product_U34bzr"
   ]
 }

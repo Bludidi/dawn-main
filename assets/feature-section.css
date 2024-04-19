@@ -1,41 +1,133 @@
 /* Target the section */
-* {
-  color: red;
-}
 
-section h2 {
-  color: red;
-}
 section {
-  margin-bottom: 20px;
+  padding: 1.5rem;
 }
 
-/* Style the heading */
-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-column-gap: 1.5em;
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* Style the product image */
-section img {
-  max-width: 100%;
+section .img-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-wrapper {
+  width: 100%;
+  align-items: center;
+}
+
+.img-wrapper img {
+  display: flex;
+  width: 100%;
   height: auto;
-  margin-bottom: 10px;
 }
 
-/* Style the product title */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+  overflow-wrap: break-word;
+}
+
+section h2,
+h3 {
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
 section h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-/* Style the feature points list */
-section .feature-points {
-  list-style-type: disc;
-  margin-left: 20px;
+.cta-button {
+  width: 90%;
+  height: 40px;
+  border-radius: 0;
+  border: none;
+  background-color: #888888;
+  color: #ffffff;
+  margin: 20px auto 0;
+  cursor: pointer;
 }
 
-/* Style individual feature points */
-section .feature-points li {
-  margin-bottom: 5px;
+/* ul {
+  text-align: left;
+} */
+
+/* section ul li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+} */
+
+.feature-points {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature-points li {
+  display: none;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+/* Style for bullet point features */
+.feature-points li.active {
+  display: block;
+  animation: zoomup 100s linear;
+  animation-delay: calc(100ms * var(--i));
+}
+
+@keyframes zoomup {
+  0%,
+  100% {
+    color: #000;
+    filter: blur(1px);
+    text-shadow: 0 0 2px #000, 0 0 4px #000, 0 0 6px #000,
+      0 0 8px #000, 0 0 10px #000, 0 0 12px #000, 0 0 14px #000,
+      0 0 16px #000;
+  }
+
+  5%,
+  95% {
+    filter: blur(0);
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+/* Small screen device */
+@media screen and (max-width: 750px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  section h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  section h3 {
+    text-align: center;
+    font-size: 16px;
+  }
 }

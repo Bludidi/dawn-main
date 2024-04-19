@@ -1,15 +1,22 @@
-<section>
+<section class="container">
   <link rel="stylesheet" href="{{ 'feature-section.css' | asset_url }}">
-  <h2>{{ section.settings.heading }}</h2>
   {% assign selected_product_id = section.settings.selected_product_id %}
   {% assign product = all_products[selected_product_id] %}
 
   <div class="wrapper">
     <div class="img-wrapper">
-      <img src="{{ product.featured_image.src | image_url: 'medium' }}" alt="{{ product.title }}" width="" height="">
+      <h2>{{ product.title }}</h2>
+      <img
+        src="{{ product.featured_image.src | img_url: 'medium' }}"
+        alt="{{ product.title }}"
+        width=""
+        height=""
+      >
     </div>
+
     <div class="content-wrapper">
-      <h3>{{ product.title }}</h3>
+      <h3>Product Features</h3>
+
       <ul class="feature-points">
         <li>{{ section.settings.feature_bullet_point_1 }}</li>
         <li>{{ section.settings.feature_bullet_point_2 }}</li>
@@ -27,13 +34,9 @@
 {% schema %}
 {
   "name": "Feature Section",
+  "class": "feature-section",
   "tag": "section",
-  "settings": [{
-    "type": "text",
-    "id": "heading",
-    "label": "Heading",
-    "default": "Add section title"
-  },
+  "settings": [
   {
       "type": "product",
       "id": "selected_product_id",
