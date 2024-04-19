@@ -8,5 +8,5 @@ document.addEventListener("DOMContentLoaded", function() {
     bulletPoints[currentIndex].classList.add('active');
   }
 
-  setInterval(cycleBulletPoints, 5000); // Change 5000 to adjust the interval (in milliseconds)
+  setInterval(cycleBulletPoints, 5000); 
 });
