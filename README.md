@@ -36,7 +36,7 @@ Your computer must have these programs installed:
   - Customise a text to show in the button
   - You will have to save your changes.
  
-## Summary od changes I made to the Theme
+## Summary of changes I made to the Theme
 - In the Sections directory I created a file name ```feature-section.liquid``` and it contains a schema and a code for my new section.
 - In the Assets directory I created a file called ```feature-section.css``` with the styling code for the new section. I also applied media quiries for responsiveness.
 - I created file called ```feature-section.js``` also located in the Assets directory which contation a function that loops through bullet points and apply the style for engagement. 
